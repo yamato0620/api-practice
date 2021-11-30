@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<body>
+    <header>
+        <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-home"></i> ホーム</a></li>
+                <li><a href="#"><i class="fas fa-camera-retro"></i>ギャラリー</a></li>
+                <li><a href="#"><i class="fas fa-running"></i>趣味</a>
+                    <ul>
+                        <li><a href="#"> <i class="fas fa-swimmer"></i>水泳</a></li>
+                        <li><a href="#"> <i class="far fa-futbol"></i>サッカー</a></li>
+                        <li><a href="#"> <i class="fas fa-golf-ball"></i>ゴルフ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>私について</a></li>
+                <li><a href="#"><i class="fas fa-map-pin"></i>アクセス</a></li>
+            </ul>
+        </div>
+    </header>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-image: url(images/html_css-main/background.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    ul li {
+        display: inline-block;
+        text-align: center;
+        width: 250;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 50px;
+    }
+
+    ul li a:hover {
+        background- color: rgb(66, 83, 77);
+        color: wheat;
+        border-radius: 3px;
+    }
+
+    ul li ul li {
+        display: none;
+        width: 210;
+    }
+
+    ul li:hover ul li {
+        display: block;
+    }
+
+    .fas,
+    .far {
+        padding: 5px;
+    }
+</style>
