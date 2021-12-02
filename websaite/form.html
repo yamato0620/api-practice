@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="contact-us">
+        <div class="form">
+            <div class="form-item">
+
+                <input type="text" class="input" placeholder="Username">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-item">
+                <input type="text" class="input" placeholder="Email">
+                <i class="fas fa-envelope-square"></i>
+            </div>
+            <div class="form-item">
+                <textarea class="input message" cols="30" rows="10" placeh older="message.....">
+                </textarea>
+            </div>
+            <div class="btn">
+                Submit
+            </div>
+            <div class="social-icon">
+                <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="google">
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: #3f3f42;
+    }
+
+    .contact-us {
+        width: 250px;
+        background: #ffffff;
+        padding: 50px;
+        margin: 100px auto;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .form-item {
+        position: relative;
+        width: 100%;
+    }
+
+    .form-item .input {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        background: #ebeef1;
+        border: 0;
+        border-radius: 30px;
+    }
+
+    .form-item .input.message {
+        height: 125px;
+        border-radius: 15px;
+        resize: none;
+    }
+
+    .btn {
+        background: #3b3b57;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 25px;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    .form-item .fas {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: #9a9a9a;
+    }
+
+    .social-icon {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social-icon div {
+        width: 50px;
+        height: 0px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .social-icon div.facebook {
+        background: #51789d;
+    }
+
+    .social-icon div.twitter {
+        background: #41caf6;
+    }
+
+    .social-icon div.google {
+        background: #fb4f4f;
+    }
+</style>
+
+</html>
